@@ -3,7 +3,7 @@
     padding: 0px;
 }
 
-.typesCircle{
+.circleBackground{
     border-radius: 50%;
     background-color: #229E6B;
     box-shadow: 4px 4px 4px 0px #20694B40;
@@ -13,7 +13,7 @@
         transition: 0.2s;
     }
 }
-.typesCircleActive{
+.circleBackgroundActive{
     border-radius: 50%;
     background-color: #E1A325;
     box-shadow: 4px 4px 4px 0px #CF8D0559;

@@ -9,9 +9,9 @@ export default function Home(){
     return(
         <div>
             <Loader />
-            
-            <div className="typesCircle" style={{width:"200px",height:"200px"}}></div>
-            <div className="typesCircleActive" style={{width:"200px",height:"200px"}}></div>
+
+            <div className="circleBackground" style={{width:"200px",height:"200px"}}></div>
+            <div className="circleBackgroundActive" style={{width:"200px",height:"200px"}}></div>
 
             <LikeHeart active={active} handleClick={setActive}/>
         </div>
