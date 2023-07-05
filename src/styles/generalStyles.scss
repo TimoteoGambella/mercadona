@@ -3,3 +3,23 @@
     padding: 0px;
 }
 
+.typesCircle{
+    border-radius: 50%;
+    background-color: #229E6B;
+    box-shadow: 4px 4px 4px 0px #20694B40;
+    transition: 0.2s;
+    &:hover{
+        background-color: #20694B;
+        transition: 0.2s;
+    }
+}
+.typesCircleActive{
+    border-radius: 50%;
+    background-color: #E1A325;
+    box-shadow: 4px 4px 4px 0px #CF8D0559;
+    transition: 0.2s;
+    &:hover{
+        background-color: #CF8D05;
+        transition: 0.2s;
+    }
+}

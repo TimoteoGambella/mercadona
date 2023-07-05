@@ -10,20 +10,19 @@
     align-items: center;
     justify-content: center;
     img{
-        // animation: spinnerPhoto 8s ease-in-out infinite;
         width: 0px;
         position: absolute;
         filter: opacity(0);
-        transition: 2s;
+        transition: 1.8s;
         &.active{
             filter: opacity(1);
             width: 120px;
-            transition: 2s;
+            transition: 1.8s;
         }
         &.goIn{
             filter: opacity(0);
             width: 0px;
-            transition: 2s;
+            transition: 1.8s;
         }
     }
 }
