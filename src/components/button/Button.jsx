@@ -1,4 +1,4 @@
-export default function Button({text,state,size,back, selected}){
+export default function Button({text,state,size,back, selected,handleClick}){
     return(
         <div className={
                 `button
@@ -7,6 +7,13 @@ export default function Button({text,state,size,back, selected}){
                 ${!state?"disabled":"enabled"}
                 ${selected?"selected":""}`
             }
+            onClick={()=>{
+                if(state){
+                    if(!selected){
+                        handleClick()
+                    }
+                }
+            }}
         >
             <p>{text}</p>
         </div>
