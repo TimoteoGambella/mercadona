@@ -2,9 +2,13 @@ INFORMACIÓN SOBRE EL CONSUMO DEL BACKEND
 
 ---------------------------------------------------------------------
 
-/getAllEvents => 
-    NO recibe parametros 
-    devuelve todos los eventos que existen en la BDD
+/getByType =>
+    Recibe un parametro de id (nombre del tipo)
+    Devuelve los productos de un tipo
+
+/getAllTypes =>
+    No recibe parametro
+    Devuelve todos los tipos de productos
 
 /getAllUsers =>
     NO recibe parametros 
@@ -32,6 +36,19 @@ INFORMACIÓN SOBRE EL CONSUMO DEL BACKEND
 /favs => 
     Recibe dos parametros, el id encriptado y el nuevo array de favoritos.
     devuelve el usuario actualizado
+
+/cart => 
+    Recibe dos parametros, el id encriptado y el nuevo array de carrito.
+    devuelve el usuario actualizado
+
+/oderBy => 
+    Recibe dos parametros, el parametro de ordenamiento (nameAZ-nameZA-priceMax-priceMin) y el type
+    devuelve nuevo orden de productos
+
+/getDays => 
+    No recibe parametros
+    devuelve el dia actual y los siguientes
+
 
 ---------------------------------------------------------------------
 
