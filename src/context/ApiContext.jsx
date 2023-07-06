@@ -18,21 +18,20 @@ export const ApiContext = ({ children }) => {
         //      password:"iashdipoasdsa"
         // })
 
-        await fetch(`https://backend-mercadona-vercel.vercel.app/api/${param}`,{
-            method:"POST",
-            body: data,
-            headers: {
-            "Content-Type":"application/json"
-            }
-        }).then(res=>{
-            res.json().then(res=>{
-                return res
-            }).catch((error)=>{
-                return error
-            })
-        }).catch((error)=>{
-            return error
-        })
+        try {
+            const response = await fetch(`https://backend-mercadona-vercel.vercel.app/api/${param}`, {
+              method: "POST",
+              body: JSON.stringify(data),
+              headers: {
+                "Content-Type": "application/json"
+              }
+            });
+        
+            const res = await response.json();
+            return res;
+          } catch (error) {
+            return error;
+        }
     }
 
 
