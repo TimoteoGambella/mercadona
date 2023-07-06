@@ -21,7 +21,7 @@ export const ApiContext = ({ children }) => {
         try {
             const response = await fetch(`https://backend-mercadona-vercel.vercel.app/api/${param}`, {
               method: "POST",
-              body: JSON.stringify(data),
+              body: data,
               headers: {
                 "Content-Type": "application/json"
               }
