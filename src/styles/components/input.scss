@@ -1,15 +1,21 @@
 .specialInput{
     &.active{
         label{
-            color: black;
             font-size: 15px;
             font-weight: 600;
         }
         div{
+            input{
+                font-size: 15px;
+                font-weight: 400;
+            }
             fieldset{
                 border-width: 2px;
                 border-color: black !important;
                 border-radius: 20px;
+            }
+            svg{
+                cursor: pointer;
             }
         }
         p{
@@ -19,12 +25,20 @@
     &.error{
         label{
             color: #EBAC00;
+            font-size: 15px;
         }
         div{
+            input{
+                font-size: 15px;
+                font-weight: 400;
+            }
             fieldset{
                 border-width: 2px;
                 border-color: #EBAC00 !important;
                 border-radius: 20px;
+            }
+            svg{
+                cursor: pointer;
             }
         }
         p{

@@ -8,6 +8,7 @@ export default function Home(){
     
     const [active,setActive] = useState(false)
     const [data,setData]=useState("")
+    const [showPass,setShowPass]=useState(false)
 
     useEffect(() => {
         console.log(data)
@@ -29,8 +30,8 @@ export default function Home(){
 
             <LikeHeart active={active} handleClick={setActive}/>
         <br/>
-            <Input label={"Label"} helperText={"Correo"} typeOfInput={"password"} error={false} classes={"claseExtra"} handleChange={setData}/>
-            <Input label={"Label"} helperText={"Correo"} typeOfInput={"text"} error={true} classes={"claseExtra"} handleChange={setData}/>
+            <Input label={"Label"} helperText={"Correo"} pass={true} showPass={showPass} setShowPass={setShowPass} error={false} classes={"claseExtra"} handleChange={setData}/>
+            <Input label={"Label"} helperText={"Correo"}  error={true} classes={"claseExtra"} handleChange={setData}/>
         <br/>
         <br/>
 
