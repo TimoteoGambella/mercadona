@@ -1,48 +1,61 @@
-.specialInput{
-    &.active{
-        label{
+.specialInput {
+    &.active {
+        label {
             font-size: 15px;
             font-weight: 600;
         }
-        div{
-            input{
+
+        div {
+            input {
                 font-size: 15px;
                 font-weight: 400;
             }
-            fieldset{
+
+            fieldset {
                 border-width: 2px;
                 border-color: black !important;
                 border-radius: 20px;
             }
-            svg{
+
+            svg {
                 cursor: pointer;
             }
         }
-        p{
+
+        p {
             color: #343434;
         }
     }
-    &.error{
-        label{
+
+    &.error {
+        label {
             color: #EBAC00;
             font-size: 15px;
         }
-        div{
-            input{
+
+        div {
+            input {
                 font-size: 15px;
                 font-weight: 400;
             }
-            fieldset{
+
+            fieldset {
                 border-width: 2px;
                 border-color: #EBAC00 !important;
                 border-radius: 20px;
             }
-            svg{
+
+            svg {
                 cursor: pointer;
             }
         }
-        p{
+
+        p {
             color: #EBAC00;
         }
+    }
+
+    &.signupInputs {
+        width: 100%;
     }
 }

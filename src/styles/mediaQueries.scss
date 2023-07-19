@@ -3,6 +3,7 @@
     @content;
   }
 }
+
 @mixin min_screen($size) {
   @media (min-width: ($size + "px")) {
     @content;

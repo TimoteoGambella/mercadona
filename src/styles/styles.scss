@@ -9,12 +9,19 @@
 @import "./components/input.scss";
 
 
+// FEATURES
+//UI 
+@import "features/ui/Header.scss";
+@import "features/ui/Footer.scss";
+
 // VIEWS
+//HOME
+@import "views/Home/Home.scss";
+@import "views/Home/components/Slider/Slider.scss";
+//SIGNUP
+@import "views/Signup/Signup.scss";
 
-
-
-
-.errorScreen{
+.errorScreen {
     width: 100%;
     height: 100vh;
     background-color: black;

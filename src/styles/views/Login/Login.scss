@@ -1,0 +1,105 @@
+.wrapperLogin {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+    .wrapperForm {
+        width: 444px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .formLogin {
+            display: flex;
+            height: 164px;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 0;
+        }
+
+        .helpPassword {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 60px;
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+        .wrapperLogoLogin img {
+            width: 316px;
+            height: 67px;
+            margin-bottom: 20px;
+        }
+
+        .infoSocialMedia {
+            margin-top: 29.5px;
+
+            h6 {
+                text-align: center;
+                position: relative;
+
+                span {
+                    background-color: #FFFF;
+                    font-size: 11px;
+                    padding: 0 10px;
+                    font-weight: normal;
+                }
+
+                &::after {
+                    content: '';
+                    height: 2px;
+                    width: 29vh;
+                    background-color: #3A3A3A;
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    z-index: -5;
+                }
+
+                &::before {
+                    content: '';
+                    height: 2px;
+                    width: 29vh;
+                    background-color: #3A3A3A;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    z-index: -5;
+                }
+            }
+
+
+        }
+
+        .wrapperButtonsSignup {
+            display: flex;
+            justify-content: space-between;
+            gap: 22px;
+            margin-top: 20px;
+
+            .buttonRedSocial {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 211px;
+                height: 57px;
+                border-radius: 20px;
+                border: 2px solid #3A3A3A;
+                background-color: transparent;
+                transition: all .6s;
+
+                &:hover {
+                    border: 2px solid #229E6B;
+                }
+            }
+        }
+    }
+
+}

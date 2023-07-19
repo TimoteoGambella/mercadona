@@ -1,20 +1,22 @@
-import { ApiContext } from './context/ApiContext';
-import { BrowserRouter as Router,Route, Routes } from 'react-router-dom';
-import Home from './views/Home';
+import { BrowserRouter } from 'react-router-dom';
 import { useMediaQuery } from '@mui/material';
+import { Router } from 'routes';
+import { TypesProvider } from 'contexts/TypesContext';
+import { AuthProvider } from 'contexts/AuthContext';
 
 function App() {
   const is1440screen=useMediaQuery("(min-width:1440px)")
   return (
     <>
       {is1440screen ? 
-        <ApiContext>
-            <Router>
-              <Routes>
-                <Route path="/" element={<Home />} />
-              </Routes>
-            </Router>
-        </ApiContext>
+
+            <BrowserRouter>
+            <TypesProvider>
+              <AuthProvider>
+                <Router/>
+              </AuthProvider>
+            </TypesProvider>
+            </BrowserRouter>
         :
         <div className='errorScreen'>
           <p>Este sitio está disponible sólo para desktop 1440px o mayor</p>

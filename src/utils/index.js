@@ -1,0 +1,1 @@
+export { arrBanners } from './Banners'

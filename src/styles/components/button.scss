@@ -1,4 +1,4 @@
-.button{
+.button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7,58 +7,74 @@
     background-color: #229E6B;
     cursor: pointer;
     transition: 0.1s;
-    p{
+
+    p {
         font-size: 15px;
         font-weight: 700;
     }
-    &:hover{
+
+    &:hover {
         transition: 0.1s;
         background-color: #18754F;
     }
-    &.large{
+
+    &.large {
         width: 444px;
         height: 52px;
         border-radius: 20px;
     }
-    &.small{
+
+    &.small {
         width: 222px;
         height: 35px;
         border-radius: 15px;
     }
-    &.verySmall{
+
+    &.verySmall {
         width: 137px;
         height: 25px;
         border-radius: 15px;
-        &.enabled:hover{
-            p{
+
+        &.enabled:hover {
+            p {
                 transition: 0.1s;
                 transform: scale(1.1);
             }
         }
     }
-    &.backTransparent{
+
+    &.backTransparent {
         background-color: white;
         color: #229E6B;
         border: 2px solid #229E6B;
     }
-    &.disabled{
+
+    &.backWithoutBorder {
+        background-color: transparent;
+        color: #229E6B;
+    }
+
+    &.disabled {
         background-color: #BEDED1;
         color: white;
         border: none;
         cursor: default;
     }
-    &.enabled:hover{
-        p{
+
+    &.enabled:hover {
+        p {
             transition: 0.1s;
             transform: scale(1.2);
         }
     }
-    &.selected{
+
+    &.selected {
         border: 1px solid #835800;
         background: #FFBC4F;
         color: #835800;
-        &:hover{
-            p{
+
+        &:hover {
+            p {
                 transform: scale(1) !important;
             }
         }

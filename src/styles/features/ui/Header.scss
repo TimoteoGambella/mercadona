@@ -1,0 +1,118 @@
+.header {
+    width: 100%;
+    height: 96.5px;
+    border-bottom: 2px solid #B3B3B3;
+    box-shadow: 0px 14px 8px -15px #B3B3B3;
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 22px 94px 22px 79px;
+        position: relative;
+
+        .linksItems {
+            display: flex;
+            gap: 22px;
+
+            align-items: center;
+
+            .buttonLinks {
+                border: none;
+                cursor: pointer;
+                background: none;
+            }
+
+        }
+
+        .popoverUser {
+            width: 242px;
+            position: absolute;
+            display: grid;
+            place-items: center;
+            top: 0;
+            right: 0;
+            margin-top: 100px;
+            margin-right: 115px;
+            padding: 20px 15px 20px 10px;
+            background-color: #F0F0F0;
+            border-radius: 20px;
+            z-index: 9;
+            transition: all 1s;
+            box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+            .titlePopoverUser {
+                text-align: center;
+                padding: 10px 15px;
+                font-size: 25px;
+                height: 35px;
+            }
+
+            .buttonsPopoverUser {
+                padding: 10px 15px;
+                border-bottom: 2px solid #D2D2D2;
+                border-top: 2px solid #D2D2D2;
+            }
+
+            .textPopoverUser {
+                text-align: center;
+                padding: 10px 15px;
+                font-size: 15px;
+            }
+        }
+
+
+        .inputWrapper {
+            width: 500px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            border: 2px solid #B3B3B3;
+            border-radius: 20px;
+            gap: 228px;
+
+            .containerleft {
+                display: flex;
+                gap: 10px;
+
+                .searchLogo {
+                    background-color: #B3B3B3;
+                    border: none;
+                    display: flex;
+                    border-radius: 50%;
+                    padding: 8px 10px;
+                    align-items: flex-start;
+                }
+
+                .inputSearch {
+                    width: 184px;
+                    border: none;
+                    padding: 2px 2px 2px 0px;
+
+                    &::placeholder {
+                        color: #B3B3B3;
+                        font-size: 17px;
+                        font-weight: 400;
+                        line-height: normal;
+                        text-align: center;
+
+                    }
+                }
+            }
+
+            .microphoneLogo {
+                display: flex;
+                align-items: flex-end;
+                border: none;
+                background: none;
+                padding: 0px 10px;
+                border-left: 2px solid #B3B3B3;
+
+                img {
+                    width: 14px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
